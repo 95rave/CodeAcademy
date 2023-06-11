@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Code Academy</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="company" class="text-center py-3"></h1>
+        <p id="location" class="text-center"></p>
+        <main>
+            <div class="my-3 d-flex justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add
+                    </button>
+                </div>
+                <div>
+                    <select id="loc" class="form-select" aria-label="Default select example">
+                        <option value="1">28 May</option>
+                        <option value="2">Nizami</option>
+                    </select>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </main>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" placeholder="Name" id="name" class="form-control">
+                            <input type="text" placeholder="Position" id="position" class="form-control my-2">
+                            <input type="number" placeholder="Salary" id="salary" class="form-control">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button onclick="addData()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
